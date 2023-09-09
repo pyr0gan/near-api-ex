@@ -4,8 +4,8 @@ defmodule NearApi.MixProject do
   def project do
     [
       app: :near_api,
-      version: "0.1.7",
-      elixir: "~> 1.9",
+      version: "0.1.7-rx",
+      elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
@@ -45,7 +45,7 @@ defmodule NearApi.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpoison, "~> 1.8"},
+      {:httpoison, "~> 2.1.0"},
       {:jason, "~> 1.2"},
       {:basefiftyeight, "~> 0.1.0"},
       {:ed25519, "~> 1.3"},
